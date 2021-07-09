@@ -33,7 +33,9 @@ namespace OfficeAddinMicrosoftGraphASPNET.Helpers
                 ctx.Response.Cookies.Add(new HttpCookie(SessionKeys.Login.UserAuthStateId)
                 {
                     Expires = DateTime.Now.AddMinutes(20),
-                    Value = id
+                    Value = id,
+                    Secure = true,
+                    SameSite = SameSiteMode.None
                 });
             }
             else
