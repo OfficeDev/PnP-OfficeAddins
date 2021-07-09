@@ -13,7 +13,7 @@ extensions:
 description: "Use Outlook event-based activation to set the signature."
 ---
 
-# Use Outlook event-based activation to set the signature (preview)
+# Use Outlook event-based activation to set the signature
 
 **Applies to:** Outlook on Windows | Outlook on the web
 
@@ -21,9 +21,7 @@ description: "Use Outlook event-based activation to set the signature."
 
 This sample uses event-based activation to run an Outlook add-in when the user creates a new message or appointment. The add-in can respond to events, even when the task pane is not open. It also uses the [setSignatureAsync API](https://docs.microsoft.com/javascript/api/outlook/office.body?view=outlook-js-preview#setSignatureAsync_data__options__callback_). If no signature is set, the add-in prompts the user to set a signature, and can then open the task pane for the user.
 
-For documentation related to this sample, see [Configure your Outlook add-in for event-based activation (preview)](https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch)
-
-> **Note:** The features used in this sample are currently in preview and subject to change. They are not currently supported for use in production environments. To try the preview features, you'll need to [join Office Insider](https://insider.office.com/join). A good way to try out preview features is to sign up for a Microsoft 365 subscription. If you don't already have a Microsoft 365 subscription, get one by joining the [Microsoft 365 Developer Program](https://developer.microsoft.com/office/dev-program).
+For documentation related to this sample, see [Configure your Outlook add-in for event-based activation](https://docs.microsoft.com/office/dev/add-ins/outlook/autolaunch)
 
 ## Features
 
@@ -36,7 +34,6 @@ For documentation related to this sample, see [Configure your Outlook add-in for
 
 ## Prerequisites
 
-- To use this sample, you'll need to [join Office Insider](https://insider.office.com/join).
 - Before running this sample, you need a recent version of [npm](https://www.npmjs.com/get-npm) and [Node.js](https://nodejs.org/en/) installed on your computer. To verify if you've already installed these tools, run the commands `node -v` and `npm -v` in your terminal.
 
 ## Solution
@@ -50,12 +47,7 @@ For documentation related to this sample, see [Configure your Outlook add-in for
 Version  | Date | Comments
 |---------|------|---------|
 1.0 | 4-01-2021 | Initial release
-
-## Disclaimer
-
-**THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
-
-----------
+1.1 | 6-1-2021 | Update for GA of setSignature API
 
 ## Scenario: Event-based activation
 
