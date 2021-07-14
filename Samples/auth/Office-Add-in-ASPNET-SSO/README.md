@@ -18,27 +18,27 @@ extensions:
   - Microsoft 365
   createdDate: 5/1/2017 2:09:09 PM
 ---
-# Office Add-in that that supports Single Sign-on to Office, the Add-in, and Microsoft Graph
+# Office Add-in that supports Single Sign-on to Office, the add-in, and Microsoft Graph
 
-This sample implements an Office Add-in that uses the `getAccessToken` API in Office.js to give the add-in access to Microsoft Graph data. This sample is built on ASP.NET and Microsoft Identity Library (MSAL) .NET.
+This sample implements an Office Add-in that uses the `getAccessToken` API in Office.js to give the add-in access to Microsoft Graph data. This sample is built on ASP.NET and Microsoft Authentication Library (MSAL) .NET.
 
 There are two versions of the sample in this repo, one of which has its own README file:
 
-- In the **Before** folder is the starting point for the SSO walkthrough at at [Create an ASP.NET Office Add-in that uses single sign-on](https://docs.microsoft.com/office/dev/add-ins/develop/create-sso-office-add-ins-aspnet). Please follow the instructions in the article.
-- In the **Complete** folder is the completed sample you would have if you completed the walkthrough. To use this version, follow the instructions in the article [Create an ASP.NET Office Add-in that uses single sign-on](https://docs.microsoft.com/office/dev/add-ins/develop/create-sso-office-add-ins-aspnet), but substitute "Complete" for "Before" in those instructions and skip the sections **Code the client-side** and **Code the server-side**.
+- **Before** folder. The starting point for the SSO walkthrough at [Create an ASP.NET Office Add-in that uses single sign-on](https://docs.microsoft.com/office/dev/add-ins/develop/create-sso-office-add-ins-aspnet). Please follow the instructions in the article.
+- **Complete** folder. The completed sample. To use this version, follow the instructions in the article [Create an ASP.NET Office Add-in that uses single sign-on](https://docs.microsoft.com/office/dev/add-ins/develop/create-sso-office-add-ins-aspnet), but substitute "Complete" for "Before" in those instructions and skip the sections **Code the client-side** and **Code the server-side**.
 
 ## Features
 
 Integrating data from online service providers increases the value and adoption of your add-ins. This code sample shows you how to connect your add-in to Microsoft Graph. Use this code sample to:
 
 * See how to use the Single Sign-on (SSO) API
-* Connect to Microsoft Graph from an Office Add-in.
-* Build an Add-in using ASP.NET MVC, MSAL 4.x.x for .NET, and Office.js. 
-* Use the MSAL.NET Library to implement the OAuth 2.0 authorization framework in an add-in.
-* Use the OneDrive REST APIs from Microsoft Graph.
-* See how an add-in can fall back to an interactive sign-in in scenarios where SSO is not supported.
-* Show a dialog using the Office UI namespace in scenarios where SSO is not supported.
-* Use add-in commands in an add-in.
+* Connect to Microsoft Graph from an Office Add-in
+* Build an add-in using ASP.NET MVC, MSAL 4.x.x for .NET, and Office.js 
+* Use the MSAL.NET Library to implement the OAuth 2.0 authorization framework in an add-in
+* Use the OneDrive REST APIs from Microsoft Graph
+* See how an add-in can fall back to an interactive sign-in in scenarios where SSO is not supported
+* Show a dialog using the Office UI namespace in scenarios where SSO is not supported
+* Use add-in commands
 
 ## Applies to
 
@@ -46,13 +46,13 @@ Integrating data from online service providers increases the value and adoption 
 
 ## Prerequisites
 
-To run this code sample, the following are required.
+To run this code sample, the following are required:
 
-* Visual Studio 2019 or later.
+* Visual Studio 2019 or later
 * [Office Developer Tools](https://www.visualstudio.com/en-us/features/office-tools-vs.aspx)
-* A Microsoft 365 account which you can get by joining the [Microsoft 365 developer program](https://aka.ms/devprogramsignup) that includes a free 1 year subscription to Microsoft 365. 
-* At least a few files and folders stored on OneDrive for Business in your Microsoft 365 subscription.
-* A Microsoft Azure Tenant. This add-in requires Azure Active Directory (AD). Azure AD provides identity services that applications use for authentication and authorization. A trial subscription can be acquired here: [Microsoft Azure](https://account.windowsazure.com/SignUp).
+* A Microsoft 365 account. If you don't have one, join the [Microsoft 365 developer program](https://aka.ms/devprogramsignup) which includes a free 1 year subscription to Microsoft 365
+* At least a few files and folders stored on OneDrive for Business in your Microsoft 365 subscription
+* A Microsoft Azure Tenant. This add-in requires Azure Active Directory (AD). Azure AD provides identity services that applications use for authentication and authorization. Sign up for a trial subscription at [Microsoft Azure Signup](https://account.windowsazure.com/SignUp)
 
 ## Solution
 
@@ -80,7 +80,7 @@ The sample sends a hardcoded query parameter on the URL for the Microsoft Graph 
 ## Questions and comments
 
 We'd love to get your feedback about this sample. You can send your feedback to us in the *Issues* section of this repository.
-Questions about developing Office Add-ins should be posted to [Microsoft Q&A](https://aka.ms/office-js-dev-questions).
+Questions about developing Office Add-ins should be posted to [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/office-js-dev.html).
 
 ## Join the Microsoft 365 Developer Program
 Get a free sandbox, tools, and other resources you need to build solutions for the Microsoft 365 platform.
